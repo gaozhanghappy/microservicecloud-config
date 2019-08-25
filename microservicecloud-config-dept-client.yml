@@ -46,7 +46,7 @@ server:
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml       
   type-aliases-package: git.gaozhanghappy.entities          
-  #mapper-locations: classpath:mybatis/mapper/**/*.xml       
+  mapper-locations: classpath:mybatis/mapper/**/*.xml       
 
 spring:
   profiles: test
