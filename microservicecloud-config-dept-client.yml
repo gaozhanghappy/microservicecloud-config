@@ -30,7 +30,7 @@ mybatis:
 eureka:
   client:
     service-url: #这个是eureka集群版注册中心
-     defaultZone: http://eureka7001.com:7001/eureka #这个是单机版的
+     defaultZone: http://eureka7001.com:7001/eureka/ #这个是单机版的
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true #显示ip地址
@@ -68,7 +68,7 @@ mybatis:
 eureka: 
   client: #客户端注册进eureka服务列表内
     service-url: 
-      defaultZone: http://eureka7001.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka/
   instance:
     instance-id: dept-8001.com
     prefer-ip-address: true
