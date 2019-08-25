@@ -6,6 +6,7 @@ spring:
 server:
   port: 8001
 spring:
+  profiles: dev
   application:
     name: microservicecloud-dept #这个最重要，最重要，最重要
   datasource:
@@ -29,7 +30,7 @@ mybatis:
 eureka:
   client:
     service-url: #这个是eureka集群版注册中心
-     defaultZone: http://localhost:7001/eureka #这个是单机版的
+     defaultZone: http://eureka7001.com:7001/eureka #这个是单机版的
   instance:
     instance-id: microservicecloud-dept8001
     prefer-ip-address: true #显示ip地址
@@ -42,7 +43,7 @@ info:
 ---
 server:
   port: 8001
-spring: 
+spring:
    profiles: test
    application: 
     name: microservicecloud-config-dept-client
